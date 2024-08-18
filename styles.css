@@ -1,0 +1,462 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("bg_image.jfif");
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(to right, #333, #444);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul li a:hover {
+    color: #333;
+    background: linear-gradient(to right, #9face6, #74ebd5);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Input styling for both username and password fields */
+form input,
+.password-container input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure consistent padding and width */
+    display: block; /* Ensure inputs are displayed as block elements */
+}
+
+/* The eye icon for password visibility toggle */
+.password-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0; /* Add margin to match the input field margin */
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.password-container i:hover {
+    color: #74ebd5;
+}
+
+form button {
+    padding: 12px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #74ebd5;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #9face6;
+    transform: scale(1.05);
+}
+
+.message {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Options styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.option-button {
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-button:hover {
+    background: linear-gradient(to right, #fecfef, #ff9a9e);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#logoutButton {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    padding: 12px 25px;
+    margin: 20px 0;
+}
+
+#logoutButton:hover {
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+}
+
+/* Profile section */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.profile-info strong {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Settings Section */
+#settingsDiv form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#settingsDiv input[type="text"],
+#settingsDiv input[type="email"],
+#settingsDiv input[type="tel"],
+#settingsDiv select,
+#settingsDiv input[type="file"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1em;
+}
+
+#settingsDiv button {
+    padding: 12px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #74ebd5;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#settingsDiv button:hover {
+    background-color: #9face6;
+    transform: scale(1.05);
+}
+
+/* Messages Section */
+#messagesDiv button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    background: #74ebd5;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#messagesDiv button:hover {
+    background: #9face6;
+}
+
+#messagesDiv input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Notifications Section */
+#notificationsDiv ul {
+    list-style: none;
+    padding: 0;
+}
+
+#notificationsDiv li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+/* General form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], select {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Message styling */
+.message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Profile picture styling */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Profile container styling */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Positioning for the footer text */
+.footer-text {
+    position: fixed;
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    right: 10px;  /* Adjust the distance from the right as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: background for better visibility */
+    padding: 5px; /* Optional: padding for better spacing */
+    border-radius: 5px; /* Optional: rounded corners for the background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Settings Section */
+#settingsDiv form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form items horizontally */
+    width: 100%;
+    max-width: 600px; /* Adjust if needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#settingsDiv .form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#settingsDiv .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center; /* Center-align text in label */
+    width: 100%; /* Adjust width to align properly with input */
+}
+
+#settingsDiv .form-group input,
+#settingsDiv .form-group select {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px; /* Ensure inputs don’t stretch too wide */
+    font-size: 1em;
+}
+
+#settingsDiv button {
+    padding: 12px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #74ebd5;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#settingsDiv button:hover {
+    background-color: #9face6;
+    transform: scale(1.05);
+}
+
